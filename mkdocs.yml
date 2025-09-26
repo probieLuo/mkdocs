@@ -1,8 +1,71 @@
-site_name: 最喜欢淋雨
+# Project information
+site_name: probieluo's blog
+site_url: https://probieluo.github.io/mkdocs/
+site_author: Martin Donath
+site_description: >-
+  Create a branded static site from a set of Markdown files to host the
+  documentation of your Open Source or commercial project – customizable,
+  searchable, mobile-friendly, 40+ languages
+
+# Repository
+repo_name: probieluo/mkdocs
+repo_url: https://github.com/probieluo/mkdocs
+edit_uri: ""
+
+# Copyright
+copyright: Copyright &copy; 2025 - 2025 probieluo
+
+# Configuration
 theme:
   name: material
 
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/probieluo
+
+markdown_extensions:
+  - markdown.extensions.admonition         # 支持提示块（如!!! note）
+  - markdown.extensions.attr_list          # 支持为元素添加HTML属性（如图片宽度）
+  - markdown.extensions.codehilite:        # 代码高亮
+      guess_lang: false
+  - markdown.extensions.def_list           # 支持定义型列表
+  - markdown.extensions.footnotes          # 支持脚注
+  - markdown.extensions.meta               # 支持Markdown文件头部元数据
+  - markdown.extensions.toc:               # 支持自动生成目录（TOC）
+      permalink: true
+  - pymdownx.arithmatex                    # 支持数学公式（MathJax/KaTeX）
+  - pymdownx.betterem:                     # 改进斜体/粗体语法
+      smart_enable: all
+  - pymdownx.caret                        # 支持插入符号（^上标^）
+  - pymdownx.critic                       # 支持批注（增删改等）
+  - pymdownx.details                      # 支持可折叠详情块
+  - pymdownx.emoji:                       # 支持emoji表情
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:                  # 支持代码高亮（已注释）
+      linenums_style: pymdownx-inline
+  - pymdownx.inlinehilite                 # 支持行内代码高亮
+  - pymdownx.keys                         # 支持键盘按键样式（如 <kbd>Ctrl</kbd>）
+  - pymdownx.magiclink:                   # 自动识别URL和GitHub仓库/用户
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark                         # 支持高亮文本（==高亮==）
+  - pymdownx.smartsymbols                 # 支持智能符号替换（如箭头等）
+  - pymdownx.snippets:                    # 支持插入外部Markdown片段
+      check_paths: true
+  - pymdownx.superfences                  # 支持多种代码块和嵌套代码块
+  - pymdownx.tabbed                       # 支持标签页内容切换
+  - pymdownx.tasklist:                    # 支持任务列表（带复选框）
+      custom_checkbox: true
+  - pymdownx.tilde                        # 支持删除线和下标（~~删除线~~，~下标~）
+
+# Page tree
 nav:
   - 首页: index.md
   - .NET:
       - ASP.NET Core 入门指南: DotNET/aspnet_core_guide.md
+  - Git:
+      - Git 指南: Git/git_guide.md
