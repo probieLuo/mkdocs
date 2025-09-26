@@ -1,3 +1,8 @@
 site_name: 最喜欢淋雨
 theme:
   name: material
+
+nav:
+  - 首页: index.md
+  - .NET:
+      - ASP.NET Core 入门指南: DotNET/aspnet_core_guide.md
