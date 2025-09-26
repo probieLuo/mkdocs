@@ -1,1 +1,3 @@
-site_name: My Docs
+site_name: 最喜欢淋雨
+theme:
+  name: material
