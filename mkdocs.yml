@@ -18,6 +18,19 @@ copyright: Copyright &copy; 2025 - 2025 probieluo
 # Configuration
 theme:
   name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
 
 # Customization
 extra:
@@ -69,3 +82,5 @@ nav:
       - ASP.NET Core 入门指南: DOTNET/aspnet_core_guide.md
   - Git:
       - Git 指南: Git/git_guide.md
+  - MKdocs:
+      - MkDocs 指南: mkdocs_guide.md
