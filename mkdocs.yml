@@ -66,6 +66,6 @@ markdown_extensions:
 nav:
   - 首页: index.md
   - .NET:
-      - ASP.NET Core 入门指南: DotNET/aspnet_core_guide.md
+      - ASP.NET Core 入门指南: DOTNET/aspnet_core_guide.md
   - Git:
       - Git 指南: Git/git_guide.md
