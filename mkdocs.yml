@@ -80,7 +80,7 @@ nav:
   - 首页: index.md
   - .NET:
       - ASP.NET Core 入门指南: DOTNET/aspnet_core_guide.md
-      - .NET面试: DOTNET/dotnet_interview.md
+      - DotNET 面试: DOTNET/dotnet_interview.md
   - Git:
       - Git 指南: Git/git_guide.md
   - MKdocs:
