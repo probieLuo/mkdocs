@@ -397,9 +397,69 @@
         <li class="md-nav__item">
   <a href="#c" class="md-nav__link">
     <span class="md-ellipsis">
-      C
+      C#
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="C#">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 值类型与引用类型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-boxingunboxing" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 装箱（Boxing）和拆箱（Unboxing）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 接口和抽象类
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 泛型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 委托与事件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-lambda" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 匿名方法与 Lambda 表达式
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -584,9 +644,69 @@
         <li class="md-nav__item">
   <a href="#c" class="md-nav__link">
     <span class="md-ellipsis">
-      C
+      C#
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="C#">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 值类型与引用类型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-boxingunboxing" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 装箱（Boxing）和拆箱（Unboxing）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 接口和抽象类
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 泛型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 委托与事件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-lambda" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 匿名方法与 Lambda 表达式
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -607,14 +727,16 @@
 
 
 <h1 id="net">.NET 面试<a class="headerlink" href="#net" title="Permanent link">&para;</a></h1>
-<h2 id="c">C<a class="headerlink" href="#c" title="Permanent link">&para;</a></h2>
-<ol>
-<li>值类型与引用类型</li>
+<h2 id="c"><code>C#</code><a class="headerlink" href="#c" title="Permanent link">&para;</a></h2>
+<h3 id="1">1. 值类型与引用类型<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<ul>
 <li><strong>值类型</strong>：直接存储数据本身，如int、bool、struct、enum等，存储在栈（Stack）上（或作为引用类型的字段时存储在堆上）。</li>
 <li><strong>引用类型</strong>：储存数据的引用（内存地址），实际数据在堆（Heap）上，如string、class、array、delegate等。</li>
-<li>区别：</li>
+<li>区别：<ul>
 <li>赋值行为：值类型赋值时赋值数据本身；引用类型赋值时赋值时复制引用（指向同一堆内存）。</li>
 <li>内存管理：值类型超出作用域自动释放；引用类型由GC（垃圾回收器）管理生命周期。</li>
+</ul>
+</li>
 <li>
 <p>代码举例：</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// 值类型示例</span>
@@ -633,25 +755,23 @@
 </li>
 <li>
 <p>方法参数传递，值类型和引用类型的传递方式区别</p>
-</li>
+<ul>
 <li>值类型：方法内修改不会影响外部变量。</li>
-<li>
-<p>引用类型：默认按引用类型传递的引用地址，方法内部修改对象内容会影响外部（指向同一对象）</p>
+<li>引用类型：默认按引用类型传递的引用地址，方法内部修改对象内容会影响外部（指向同一对象）</li>
+</ul>
 </li>
-<li>
-<p>装箱（Boxing）和拆箱（Unboxing）  </p>
-</li>
+</ul>
+<h3 id="2-boxingunboxing">2. 装箱（Boxing）和拆箱（Unboxing）<a class="headerlink" href="#2-boxingunboxing" title="Permanent link">&para;</a></h3>
+<ul>
 <li><strong>装箱</strong>：将值类型转换为引用类型（object或接口）</li>
-<li>
-<p><strong>拆箱</strong>：将引用类型（装箱后的对象）转换回值类型</p>
-</li>
-<li>
-<p>接口和抽象类</p>
-</li>
+<li><strong>拆箱</strong>：将引用类型（装箱后的对象）转换回值类型</li>
+</ul>
+<h3 id="3">3. 接口和抽象类<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<ul>
 <li><strong>接口</strong>：仅定义方法、属性、事件或索引器的签名（无实现）。<code>Interface</code>定义，成员默认public。</li>
 <li><strong>抽象类</strong>：可包含抽象成员和具体成员的类，不能实例化。<code>abstract</code>定义，成员可指定访问修饰符。</li>
-<li>接口和抽象类区别</li>
-</ol>
+<li>
+<p>接口和抽象类区别</p>
 <table>
 <thead>
 <tr>
@@ -693,21 +813,23 @@
 </tr>
 </tbody>
 </table>
+</li>
+<li>
+<p>什么时候用接口？什么时候用抽象类？</p>
 <ul>
-<li>什么时候用接口？什么时候用抽象类？</li>
-<li>优先用接口场景：<ol>
+<li>优先用接口场景：</li>
 <li>需要继承多能力时</li>
 <li>定义跨多个不相关类的通用功能（如IDisposable接口）</li>
 <li>纯契约设计，不提供默认实现（如服务接口）</li>
-</ol>
-</li>
-<li>优先用抽象类场景：<ol>
+<li>优先用抽象类场景：</li>
 <li>多个相关类共享部分实现逻辑（提取公共代码）</li>
 <li>需要定义字段或构造函数时</li>
 <li>希望控制继承层次（单继承体系），且可能后续扩展具体方法</li>
-</ol>
+</ul>
 </li>
-<li>接口和抽象类在依赖注入中的应用场景</li>
+<li>
+<p>接口和抽象类在依赖注入中的应用场景</p>
+<ul>
 <li>
 <p>接口是依赖注入的核心，用于定义服务契约，实现依赖倒置（高层模块依赖抽象）</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// 接口定义服务</span>
@@ -730,16 +852,12 @@
 <li>
 <p>抽象类较少直接用于依赖注入，但若多个服务共享基础逻辑，可作为基类</p>
 </li>
-<li>
-<p>泛型</p>
-</li>
-<li>
-<p>委托与事件</p>
-</li>
-<li>
-<p>匿名方法与 Lambda 表达式</p>
+</ul>
 </li>
 </ul>
+<h3 id="4">4. 泛型<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
+<h3 id="5">5. 委托与事件<a class="headerlink" href="#5" title="Permanent link">&para;</a></h3>
+<h3 id="6-lambda">6. 匿名方法与 Lambda 表达式<a class="headerlink" href="#6-lambda" title="Permanent link">&para;</a></h3>
 
 
 
